@@ -65,10 +65,10 @@ export default function App() {
           {getRoutes(routes)}
           <Route path="/cart" element={<Cart />} />
           <Route path="/presentation" element={<Presentation />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/Sign-up" element={<SignUp />} />
-          {/* <Redirect to="/Login"  /> */}
-          <Route path="*" element={<Navigate to="/Login" />} />
+          <Redirect to="/login"  />
+          <Route path="*" element={<Navigate to="/login" />} />
         </Routes>
         </cartProvider>
       </ThemeProvider>
