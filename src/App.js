@@ -63,11 +63,11 @@ export default function App() {
         <cartProvider>
         <Routes>
           {getRoutes(routes)}
+          <Redirect to="/" element={<Login /> } />
           <Route path="/cart" element={<Cart />} />
           <Route path="/presentation" element={<Presentation />} />
           <Route path="/login" element={<Login />} />
           <Route path="/Sign-up" element={<SignUp />} />
-          <Redirect to="/login"  />
           <Route path="*" element={<Navigate to="/login" />} />
         </Routes>
         </cartProvider>
