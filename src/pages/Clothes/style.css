@@ -1,0 +1,13 @@
+.card-block{
+	margin-top: 5%;
+margin-left: 5%;
+margin-bottom: 5%;
+}
+.card{
+	border-radius: 12px;
+}
+  .card-img-top {
+	/* width: 200px; */
+	/* height: 10px; */
+	align-self: center;
+  }
